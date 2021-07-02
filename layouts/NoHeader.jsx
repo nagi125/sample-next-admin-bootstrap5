@@ -12,7 +12,7 @@ const Layout = ({ children, title = 'title' }) => {
           {children}
         </div>
       </>
-  )
-}
+  );
+};
 
 export default Layout;

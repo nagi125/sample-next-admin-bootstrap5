@@ -1,29 +1,53 @@
-// Header
-header {
-  color: #ffffff;
-  background-color: #333;
+#app {
+  position: relative;
 }
 
-nav {
-  padding: 0.3rem;
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
 
-  a {
-    color: #ffffff;
-    text-decoration: none;
+.sidebar {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 100;
+  padding-bottom: 52px;
+  overflow: scroll;
+  border-right: 1px solid #CCCCCC;
+
+  ul li.nav-item {
+    margin-top: 10px;
   }
 
-  a:hover {
-    color: #ffffff;
+  /** SideBar Accordion */
+  li .submenu  {
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem 0 1rem;
   }
 
-  .dropdown-item {
-    a {
-      color: #333333;
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: #333333;
-    }
+  .nav-link {
+    font-weight: 500;
+    color: var(--bs-dark);
   }
+
+  .nav-link:hover {
+    color: var(--bs-primary);
+  }
+}
+
+.main-box {
+  padding: 52px 0 0 15%;
+  width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  padding: 30px 30px 10px 30px;
 }
